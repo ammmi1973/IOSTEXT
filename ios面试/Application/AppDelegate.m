@@ -12,8 +12,6 @@
 @interface AppDelegate ()
 @end
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self .window .backgroundColor =[UIColor whiteColor];
     self .window .rootViewController =[TabBarVC new];

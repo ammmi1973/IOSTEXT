@@ -121,4 +121,14 @@
     webvi .weburl =getarr[indexPath .row][@"contentUrl"];
     [self .navigationController pushViewController:webvi animated:YES];
 }
+/*
+ */
+-(void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+{
+    
+    WebViewVc *webvi=[WebViewVc new];
+    webvi .hidesBottomBarWhenPushed=YES;
+    webvi .weburl =listarr[index][@"contentUrl"];
+    [self .navigationController pushViewController:webvi animated:YES];
+}
 @end

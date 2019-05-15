@@ -14,6 +14,7 @@
         [self.view addGestureRecognizer:popRecognizer];
         popRecognizer.delegate = self;
     }
+    
 }
 -(void)creatcommonview
 {
