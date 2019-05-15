@@ -1,12 +1,14 @@
 //
-//  ViewController.h
-//  wedding
+//  MainVcView.m
+//  ios面试
 //
-//  Created by 高金才 on 2019/3/8.
+//  Created by 高金才 on 2019/5/15.
 //  Copyright © 2019 高金才. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+
 
 @interface TabBarVC :UITabBarController
 

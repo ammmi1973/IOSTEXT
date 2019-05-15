@@ -1,10 +1,3 @@
-//
-//  WTKBaseViewController.m
-//  WTKPushAndPopAnimation
-//
-//  Created by 王同科 on 16/9/23.
-//  Copyright © 2016年 王同科. All rights reserved.
-//
 
 #import "fatherVC.h"
 @interface fatherVC ()<UIGestureRecognizerDelegate>
@@ -24,18 +17,16 @@
 }
 -(void)creatcommonview
 {
-    self .view .backgroundColor=backcolor;
+    self .view .backgroundColor=[UIColor whiteColor];
     _titvi=[[UIView alloc]initWithFrame:CGRectMake(0, 0, w, nav_height)];
-    _titvi .backgroundColor=whitecolor;
+    _titvi .backgroundColor=[UIColor whiteColor];
     
     _tit=[[UILabel alloc]initWithFrame:CGRectMake(50, heightStatus, w-100, 40)];
-    _tit .textColor=blackcolor;
+    _tit .textColor=[UIColor blackColor];
     _tit .textAlignment=1;
 //    _tit .font =[];
     [_titvi addSubview:_tit];
-    UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(0, nav_height-1, w, 1)];
-    line1.backgroundColor =backcolor;
-    [_titvi addSubview:line1];
+
     _backbut=[[UIButton alloc]initWithFrame:CGRectMake(5, heightStatus, 40, 40)];
     [_backbut setImage:[UIImage imageNamed:@"back"] forState:0];
     

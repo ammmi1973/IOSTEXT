@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WebViewVc : UIViewController
-
+@interface WebViewVc : fatherVC
+@property(nonatomic ,strong)NSString*weburl;
 @end
-
 NS_ASSUME_NONNULL_END

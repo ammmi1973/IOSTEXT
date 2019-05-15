@@ -9,5 +9,14 @@
 #import "TxtHight.h"
 
 @implementation TxtHight
-
++(float)getTxTheight:(NSString *)Str withWidth:(float)width
+{
+    CGSize size = CGSizeMake(width, 2000);
+    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    [style setLineSpacing:20];
+    
+    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:15], NSParagraphStyleAttributeName:style};
+    CGFloat height = [Str boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:dic context:nil].size.height;
+    return height;
+}
 @end

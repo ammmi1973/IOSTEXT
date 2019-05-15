@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LeftImgCell : UITableViewCell
 
+@property(nonatomic ,strong)UIImageView *img;
+@property(nonatomic ,strong)UILabel *titlelab;
+-(void)AddLeftImg:(NSDictionary*)LeftImgDic;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
-@interface MageCell : UITableViewCell
-@property (nonatomic ,strong)UIScrollView *scrvi;
--(void)AddImg:(NSDictionary *)ImgDic;
--(void)AddScrImg:(NSDictionary*)ScrImgDic;
--(void)AddTitleLab:(NSDictionary*)TitDic;
--(void)AddLeftImg:(NSDictionary*)LeftImgDic;
+@interface ThreeMageCell : UITableViewCell
+@property(nonatomic ,strong)UILabel *titlelab;
+@property(nonatomic ,strong)NSMutableArray*imgarr;
+-(void)AddTheeImg:(NSDictionary*)ThreeDic;
+
+
 @end
 NS_ASSUME_NONNULL_END

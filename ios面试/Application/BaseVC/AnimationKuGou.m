@@ -1,10 +1,3 @@
-//
-//  WTKAnimationKuGou.m
-//  WTKPushAndPopAnimation
-//
-//  Created by 王同科 on 16/9/26.
-//  Copyright © 2016年 王同科. All rights reserved.
-//
 
 #import "AnimationKuGou.h"
 #import "UIViewController+AnimationTransitioningSnapshot.h"

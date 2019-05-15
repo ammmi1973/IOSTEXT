@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TitleCell : UITableViewCell
+@property(nonatomic ,strong)UILabel *titlelab;
 
+-(void)AddTitleLab:(NSDictionary*)TitDic;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -15,6 +15,24 @@
 		A80949E6228AF3A900ED64B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A80949E5228AF3A900ED64B6 /* main.m */; };
 		A80949F0228AF3A900ED64B6 /* ios__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A80949EF228AF3A900ED64B6 /* ios__Tests.m */; };
 		A80949FB228AF3A900ED64B6 /* ios__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A80949FA228AF3A900ED64B6 /* ios__UITests.m */; };
+		A8094A0A228AF43700ED64B6 /* ThreeMageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8094A09228AF43700ED64B6 /* ThreeMageCell.m */; };
+		A8094A11228AFD9B00ED64B6 /* webRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8094A0C228AFD9B00ED64B6 /* webRequest.m */; };
+		A8094A12228AFD9B00ED64B6 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A8094A0D228AFD9B00ED64B6 /* Request.m */; };
+		A8324190228BA97000D96FC7 /* TxtHight.m in Sources */ = {isa = PBXBuildFile; fileRef = A832418F228BA97000D96FC7 /* TxtHight.m */; };
+		A8324196228BC3BA00D96FC7 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8324195228BC3BA00D96FC7 /* TitleCell.m */; };
+		A8324199228BC3D100D96FC7 /* LeftImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8324198228BC3D100D96FC7 /* LeftImgCell.m */; };
+		A832419E228BCAB000D96FC7 /* MainVcView.m in Sources */ = {isa = PBXBuildFile; fileRef = A832419D228BCAAF00D96FC7 /* MainVcView.m */; };
+		A8D12B9C228BFD4800AA629D /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12B9A228BFD4800AA629D /* TabBarVC.m */; };
+		A8D12B9F228BFDA900AA629D /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12B9E228BFDA900AA629D /* SecondVC.m */; };
+		A8D12BA2228C196800AA629D /* webload.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BA1228C196800AA629D /* webload.m */; };
+		A8D12BA5228C199300AA629D /* WebViewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BA4228C199300AA629D /* WebViewVc.m */; };
+		A8D12BE1228C20AF00AA629D /* AnimationDiffNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BD4228C20AF00AA629D /* AnimationDiffNavi.m */; };
+		A8D12BE2228C20AF00AA629D /* BaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BD5228C20AF00AA629D /* BaseAnimation.m */; };
+		A8D12BE3228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BD6228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.m */; };
+		A8D12BE4228C20AF00AA629D /* AnimationKuGou.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BD9228C20AF00AA629D /* AnimationKuGou.m */; };
+		A8D12BE5228C20AF00AA629D /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BDD228C20AF00AA629D /* NavigationController.m */; };
+		A8D12BE6228C20AF00AA629D /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8D12BDF228C20AF00AA629D /* back.jpg */; };
+		A8D12BE7228C20AF00AA629D /* fatherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BE0228C20AF00AA629D /* fatherVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C65CB206779CD61ED0E84E2 /* Pods-ios面试.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios面试.release.xcconfig"; path = "Target Support Files/Pods-ios面试/Pods-ios面试.release.xcconfig"; sourceTree = "<group>"; };
+		794F4B6D40B04C44BF1C4304 /* Pods-ios面试.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios面试.debug.xcconfig"; path = "Target Support Files/Pods-ios面试/Pods-ios面试.debug.xcconfig"; sourceTree = "<group>"; };
 		A80949D3228AF3A600ED64B6 /* ios面试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios面试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80949D6228AF3A600ED64B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A80949D7228AF3A600ED64B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +71,44 @@
 		A80949F6228AF3A900ED64B6 /* ios面试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios面试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80949FA228AF3A900ED64B6 /* ios__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios__UITests.m; sourceTree = "<group>"; };
 		A80949FC228AF3A900ED64B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8094A08228AF43700ED64B6 /* ThreeMageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeMageCell.h; sourceTree = "<group>"; };
+		A8094A09228AF43700ED64B6 /* ThreeMageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeMageCell.m; sourceTree = "<group>"; };
+		A8094A0C228AFD9B00ED64B6 /* webRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webRequest.m; sourceTree = "<group>"; };
+		A8094A0D228AFD9B00ED64B6 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		A8094A0E228AFD9B00ED64B6 /* webRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webRequest.h; sourceTree = "<group>"; };
+		A8094A0F228AFD9B00ED64B6 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		A8094A10228AFD9B00ED64B6 /* Requestheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Requestheader.h; sourceTree = "<group>"; };
+		A832418E228BA97000D96FC7 /* TxtHight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TxtHight.h; sourceTree = "<group>"; };
+		A832418F228BA97000D96FC7 /* TxtHight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TxtHight.m; sourceTree = "<group>"; };
+		A8324194228BC3BA00D96FC7 /* TitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
+		A8324195228BC3BA00D96FC7 /* TitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
+		A8324197228BC3D100D96FC7 /* LeftImgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftImgCell.h; sourceTree = "<group>"; };
+		A8324198228BC3D100D96FC7 /* LeftImgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftImgCell.m; sourceTree = "<group>"; };
+		A832419C228BCAAF00D96FC7 /* MainVcView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVcView.h; sourceTree = "<group>"; };
+		A832419D228BCAAF00D96FC7 /* MainVcView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVcView.m; sourceTree = "<group>"; };
+		A8D12B9A228BFD4800AA629D /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
+		A8D12B9B228BFD4800AA629D /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
+		A8D12B9D228BFDA900AA629D /* SecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
+		A8D12B9E228BFDA900AA629D /* SecondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
+		A8D12BA0228C196800AA629D /* webload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = webload.h; sourceTree = "<group>"; };
+		A8D12BA1228C196800AA629D /* webload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webload.m; sourceTree = "<group>"; };
+		A8D12BA3228C199300AA629D /* WebViewVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewVc.h; sourceTree = "<group>"; };
+		A8D12BA4228C199300AA629D /* WebViewVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewVc.m; sourceTree = "<group>"; };
+		A8D12BD4228C20AF00AA629D /* AnimationDiffNavi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDiffNavi.m; sourceTree = "<group>"; };
+		A8D12BD5228C20AF00AA629D /* BaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimation.m; sourceTree = "<group>"; };
+		A8D12BD6228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AnimationTransitioningSnapshot.m"; sourceTree = "<group>"; };
+		A8D12BD7228C20AF00AA629D /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		A8D12BD8228C20AF00AA629D /* fatherVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fatherVC.h; sourceTree = "<group>"; };
+		A8D12BD9228C20AF00AA629D /* AnimationKuGou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationKuGou.m; sourceTree = "<group>"; };
+		A8D12BDA228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AnimationTransitioningSnapshot.h"; sourceTree = "<group>"; };
+		A8D12BDB228C20AF00AA629D /* BaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimation.h; sourceTree = "<group>"; };
+		A8D12BDC228C20AF00AA629D /* AnimationDiffNavi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDiffNavi.h; sourceTree = "<group>"; };
+		A8D12BDD228C20AF00AA629D /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		A8D12BDE228C20AF00AA629D /* AnimationKuGou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationKuGou.h; sourceTree = "<group>"; };
+		A8D12BDF228C20AF00AA629D /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		A8D12BE0228C20AF00AA629D /* fatherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fatherVC.m; sourceTree = "<group>"; };
+		A8EDB07A228B395200300A04 /* ios-PCH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-PCH.h"; sourceTree = "<group>"; };
+		B11F6C8FF30AD4091ACF1434 /* Pods_ios__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +136,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17CA3C0CB5FEB047F5D59623 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				794F4B6D40B04C44BF1C4304 /* Pods-ios面试.debug.xcconfig */,
+				3C65CB206779CD61ED0E84E2 /* Pods-ios面试.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		891F07B6EDEEA061D11FB912 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B11F6C8FF30AD4091ACF1434 /* Pods_ios__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A80949CA228AF3A600ED64B6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +160,8 @@
 				A80949EE228AF3A900ED64B6 /* ios面试Tests */,
 				A80949F9228AF3A900ED64B6 /* ios面试UITests */,
 				A80949D4228AF3A600ED64B6 /* Products */,
+				17CA3C0CB5FEB047F5D59623 /* Pods */,
+				891F07B6EDEEA061D11FB912 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +178,15 @@
 		A80949D5228AF3A600ED64B6 /* ios面试 */ = {
 			isa = PBXGroup;
 			children = (
-				A80949D6228AF3A600ED64B6 /* AppDelegate.h */,
-				A80949D7228AF3A600ED64B6 /* AppDelegate.m */,
-				A80949D9228AF3A600ED64B6 /* ViewController.h */,
-				A80949DA228AF3A600ED64B6 /* ViewController.m */,
+				A832419B228BCA8A00D96FC7 /* Application */,
+				A8094A0B228AFD9B00ED64B6 /* WebTools */,
+				A832419A228BC3E900D96FC7 /* Cell */,
 				A80949DC228AF3A600ED64B6 /* Main.storyboard */,
 				A80949DF228AF3A900ED64B6 /* Assets.xcassets */,
 				A80949E1228AF3A900ED64B6 /* LaunchScreen.storyboard */,
 				A80949E4228AF3A900ED64B6 /* Info.plist */,
 				A80949E5228AF3A900ED64B6 /* main.m */,
+				A8EDB07A228B395200300A04 /* ios-PCH.h */,
 			);
 			path = "ios面试";
 			sourceTree = "<group>";
@@ -132,6 +209,75 @@
 			path = "ios面试UITests";
 			sourceTree = "<group>";
 		};
+		A8094A0B228AFD9B00ED64B6 /* WebTools */ = {
+			isa = PBXGroup;
+			children = (
+				A832418E228BA97000D96FC7 /* TxtHight.h */,
+				A832418F228BA97000D96FC7 /* TxtHight.m */,
+				A8094A0E228AFD9B00ED64B6 /* webRequest.h */,
+				A8094A0C228AFD9B00ED64B6 /* webRequest.m */,
+				A8094A0F228AFD9B00ED64B6 /* Request.h */,
+				A8094A0D228AFD9B00ED64B6 /* Request.m */,
+				A8094A10228AFD9B00ED64B6 /* Requestheader.h */,
+				A8D12BA0228C196800AA629D /* webload.h */,
+				A8D12BA1228C196800AA629D /* webload.m */,
+			);
+			path = "WebTool\U0010s";
+			sourceTree = "<group>";
+		};
+		A832419A228BC3E900D96FC7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A8094A08228AF43700ED64B6 /* ThreeMageCell.h */,
+				A8094A09228AF43700ED64B6 /* ThreeMageCell.m */,
+				A8324194228BC3BA00D96FC7 /* TitleCell.h */,
+				A8324195228BC3BA00D96FC7 /* TitleCell.m */,
+				A8324197228BC3D100D96FC7 /* LeftImgCell.h */,
+				A8324198228BC3D100D96FC7 /* LeftImgCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A832419B228BCA8A00D96FC7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A8D12BD3228C20AF00AA629D /* BaseVC */,
+				A8D12B9B228BFD4800AA629D /* TabBarVC.h */,
+				A8D12B9A228BFD4800AA629D /* TabBarVC.m */,
+				A80949D6228AF3A600ED64B6 /* AppDelegate.h */,
+				A80949D7228AF3A600ED64B6 /* AppDelegate.m */,
+				A80949D9228AF3A600ED64B6 /* ViewController.h */,
+				A80949DA228AF3A600ED64B6 /* ViewController.m */,
+				A832419C228BCAAF00D96FC7 /* MainVcView.h */,
+				A832419D228BCAAF00D96FC7 /* MainVcView.m */,
+				A8D12B9D228BFDA900AA629D /* SecondVC.h */,
+				A8D12B9E228BFDA900AA629D /* SecondVC.m */,
+				A8D12BA3228C199300AA629D /* WebViewVc.h */,
+				A8D12BA4228C199300AA629D /* WebViewVc.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A8D12BD3228C20AF00AA629D /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				A8D12BD4228C20AF00AA629D /* AnimationDiffNavi.m */,
+				A8D12BD5228C20AF00AA629D /* BaseAnimation.m */,
+				A8D12BD6228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.m */,
+				A8D12BD7228C20AF00AA629D /* NavigationController.h */,
+				A8D12BD8228C20AF00AA629D /* fatherVC.h */,
+				A8D12BD9228C20AF00AA629D /* AnimationKuGou.m */,
+				A8D12BDA228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.h */,
+				A8D12BDB228C20AF00AA629D /* BaseAnimation.h */,
+				A8D12BDC228C20AF00AA629D /* AnimationDiffNavi.h */,
+				A8D12BDD228C20AF00AA629D /* NavigationController.m */,
+				A8D12BDE228C20AF00AA629D /* AnimationKuGou.h */,
+				A8D12BDF228C20AF00AA629D /* back.jpg */,
+				A8D12BE0228C20AF00AA629D /* fatherVC.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A80949FF228AF3A900ED64B6 /* Build configuration list for PBXNativeTarget "ios面试" */;
 			buildPhases = (
+				3D187D47D87CC6D15D3E52A7 /* [CP] Check Pods Manifest.lock */,
 				A80949CF228AF3A600ED64B6 /* Sources */,
 				A80949D0228AF3A600ED64B6 /* Frameworks */,
 				A80949D1228AF3A600ED64B6 /* Resources */,
+				A4C9CFA93C07F548179068B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D12BE6228C20AF00AA629D /* back.jpg in Resources */,
 				A80949E3228AF3A900ED64B6 /* LaunchScreen.storyboard in Resources */,
 				A80949E0228AF3A900ED64B6 /* Assets.xcassets in Resources */,
 				A80949DE228AF3A600ED64B6 /* Main.storyboard in Resources */,
@@ -257,14 +406,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D187D47D87CC6D15D3E52A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios面试-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C9CFA93C07F548179068B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios面试/Pods-ios面试-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios面试/Pods-ios面试-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A80949CF228AF3A600ED64B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D12BA5228C199300AA629D /* WebViewVc.m in Sources */,
+				A8094A11228AFD9B00ED64B6 /* webRequest.m in Sources */,
+				A8D12BE5228C20AF00AA629D /* NavigationController.m in Sources */,
+				A8D12BE4228C20AF00AA629D /* AnimationKuGou.m in Sources */,
+				A8D12BA2228C196800AA629D /* webload.m in Sources */,
+				A8D12B9C228BFD4800AA629D /* TabBarVC.m in Sources */,
 				A80949DB228AF3A600ED64B6 /* ViewController.m in Sources */,
+				A8D12BE2228C20AF00AA629D /* BaseAnimation.m in Sources */,
+				A8324199228BC3D100D96FC7 /* LeftImgCell.m in Sources */,
 				A80949E6228AF3A900ED64B6 /* main.m in Sources */,
 				A80949D8228AF3A600ED64B6 /* AppDelegate.m in Sources */,
+				A8324190228BA97000D96FC7 /* TxtHight.m in Sources */,
+				A8D12BE7228C20AF00AA629D /* fatherVC.m in Sources */,
+				A8D12BE3228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.m in Sources */,
+				A832419E228BCAB000D96FC7 /* MainVcView.m in Sources */,
+				A8094A0A228AF43700ED64B6 /* ThreeMageCell.m in Sources */,
+				A8324196228BC3BA00D96FC7 /* TitleCell.m in Sources */,
+				A8D12B9F228BFDA900AA629D /* SecondVC.m in Sources */,
+				A8094A12228AFD9B00ED64B6 /* Request.m in Sources */,
+				A8D12BE1228C20AF00AA629D /* AnimationDiffNavi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,35 +652,43 @@
 		};
 		A8094A00228AF3A900ED64B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 794F4B6D40B04C44BF1C4304 /* Pods-ios面试.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKQ56UCG88;
+				GCC_PREFIX_HEADER = "/Users/gaojincai/Desktop/ios面试/ios面试/ios-PCH.h";
 				INFOPLIST_FILE = "ios面试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "success.com.ios--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A8094A01228AF3A900ED64B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C65CB206779CD61ED0E84E2 /* Pods-ios面试.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKQ56UCG88;
+				GCC_PREFIX_HEADER = "/Users/gaojincai/Desktop/ios面试/ios面试/ios-PCH.h";
 				INFOPLIST_FILE = "ios面试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "success.com.ios--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,10 +1,3 @@
-//
-//  Request.m
-//  约我出行
-//
-//  Created by ywcx on 2018/5/30.
-//  Copyright © 2018年 ammmi. All rights reserved.
-//
 
 #import "Request.h"
 #import <AFNetworking/AFNetworking.h>
@@ -23,11 +16,7 @@ static Request *_sharedIn = nil;
 }
 -(void)postrequestWithURL:(NSString *)url andBody:(NSMutableDictionary *)body andBlock:(void (^)(NSDictionary *))block
 {
-    if ([modle getpassenger_id])
-    {
-        [body setObject:[modle getpassenger_id] forKey:@"passenger_id"];
-        [body setObject:[[NSUserDefaults standardUserDefaults]objectForKey:@"token"][@"token"] forKey:@"token"];
-    }
+   
     AFHTTPSessionManager *mage=[AFHTTPSessionManager manager];
     [mage.requestSerializer setHTTPShouldHandleCookies:YES];
     mage.requestSerializer =[AFJSONRequestSerializer serializer];
@@ -56,14 +45,46 @@ static Request *_sharedIn = nil;
          nil;
      }
       success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject){
-          NSLog(@"这个------%@",responseObject);
+          NSLog(@"这个get获取到的数据%@",responseObject);
           block (responseObject);
       }
       failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-          NSMutableDictionary *postdic =[NSMutableDictionary dictionary];
-          [postdic setObject:@"10000" forKey:@"errorCode"];
-          block (postdic);
+          NSMutableDictionary *getdic =[NSMutableDictionary dictionary];
+          [getdic setObject:@"10000" forKey:@"errorCode"];
+          block (getdic);
       }];
+    
+    
+}
+
+-(void)uploadImageWithURL:(NSString *)url andImage:(NSData *)imagedata andBlock:(void (^)(NSDictionary *))block
+{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager.requestSerializer setValue:@"multipart/form-data" forHTTPHeaderField:@"Content-Type"];
+    
+    NSString *urlString = url;
+    NSData *imgdata = imagedata;
+    
+    [manager POST:urlString parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.dateFormat   = @"YYYY-MM-dd-hh:mm:ss:SSS";
+        NSString *str = [formatter stringFromDate:[NSDate date]];
+        NSString *fileName = [NSString stringWithFormat:@"%@.png", str];
+    
+        [formData appendPartWithFileData:imgdata name:@"mfile" fileName:fileName mimeType:@"image/jpeg"];
+    } progress:^(NSProgress * _Nonnull uploadProgress) {} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSString *errmsg = [responseObject objectForKey:@"errmsg"];
+        NSString *mediaID = [responseObject objectForKey:@"mediaid"];
+        
+        if (mediaID && [errmsg isEqualToString:@"ok"]) {
+            block(responseObject);
+            NSLog(@"这里是图片上传的效果")
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败：%@",error);
+        block(nil);
+    }];
     
     
 }

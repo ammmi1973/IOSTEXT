@@ -7,16 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "TabBarVC.h"
 
 @interface AppDelegate ()
-
 @end
-
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self .window .backgroundColor =[UIColor whiteColor];
+    self .window .rootViewController =[TabBarVC new];
     return YES;
 }
 
