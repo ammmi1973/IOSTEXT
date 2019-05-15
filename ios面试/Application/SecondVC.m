@@ -21,7 +21,7 @@
     [super viewDidLoad];
     self .tit .text =@"上传图片";
     self .view .backgroundColor =[UIColor orangeColor];
-    UIButton *UpImgBut =[[UIButton alloc]initWithFrame:CGRectMake(50, h-safeBottom-250, w-100, 60)];
+    UIButton *UpImgBut =[[UIButton alloc]initWithFrame:CGRectMake(50, h-safeBottom-180, w-100, 60)];
     [UpImgBut setTitle:@"上传图片" forState:0];
     [UpImgBut setTitleColor:[UIColor blackColor] forState:0];
     UpImgBut .titleLabel .font =[UIFont systemFontOfSize:16];
@@ -34,7 +34,7 @@
     }];
     
     
-    loadimg =[[UIImageView alloc]initWithFrame:CGRectMake(50,nav_height+50, 240, 320)];
+    loadimg =[[UIImageView alloc]initWithFrame:CGRectMake(80,nav_height+50, w-160, 1.4*(w-160))];
     [self .view addSubview:loadimg];
 
 
@@ -87,7 +87,7 @@
     
     [[webRequest Manager]UpdataImgRequestImgaData:imageData andComplet:^(NSDictionary *seccesdic) {
         NSLog(@"这里是上传成功");
-        [loadimg sd_setImageWithURL:seccesdic[@"photo"]];
+        [loadimg setImage:image];
     }];
 }
 

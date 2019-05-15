@@ -33,6 +33,7 @@
 		A8D12BE5228C20AF00AA629D /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BDD228C20AF00AA629D /* NavigationController.m */; };
 		A8D12BE6228C20AF00AA629D /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8D12BDF228C20AF00AA629D /* back.jpg */; };
 		A8D12BE7228C20AF00AA629D /* fatherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BE0228C20AF00AA629D /* fatherVC.m */; };
+		A8D12BE9228C675B00AA629D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D12BE8228C675B00AA629D /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		A8D12BDE228C20AF00AA629D /* AnimationKuGou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationKuGou.h; sourceTree = "<group>"; };
 		A8D12BDF228C20AF00AA629D /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
 		A8D12BE0228C20AF00AA629D /* fatherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fatherVC.m; sourceTree = "<group>"; };
+		A8D12BE8228C675B00AA629D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		A8EDB07A228B395200300A04 /* ios-PCH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-PCH.h"; sourceTree = "<group>"; };
 		B11F6C8FF30AD4091ACF1434 /* Pods_ios__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -273,6 +275,7 @@
 				A8D12BDD228C20AF00AA629D /* NavigationController.m */,
 				A8D12BDE228C20AF00AA629D /* AnimationKuGou.h */,
 				A8D12BDF228C20AF00AA629D /* back.jpg */,
+				A8D12BE8228C675B00AA629D /* back.png */,
 				A8D12BE0228C20AF00AA629D /* fatherVC.m */,
 			);
 			path = BaseVC;
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D12BE6228C20AF00AA629D /* back.jpg in Resources */,
+				A8D12BE9228C675B00AA629D /* back.png in Resources */,
 				A80949E3228AF3A900ED64B6 /* LaunchScreen.storyboard in Resources */,
 				A80949E0228AF3A900ED64B6 /* Assets.xcassets in Resources */,
 				A80949DE228AF3A600ED64B6 /* Main.storyboard in Resources */,

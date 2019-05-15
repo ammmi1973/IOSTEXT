@@ -60,27 +60,36 @@ static Request *_sharedIn = nil;
 -(void)uploadImageWithURL:(NSString *)url andImage:(NSData *)imagedata andBlock:(void (^)(NSDictionary *))block
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager.requestSerializer setValue:@"multipart/form-data" forHTTPHeaderField:@"Content-Type"];
-    
-    NSString *urlString = url;
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //[manager.requestSerializer setValue:@"multipart/form-data" forHTTPHeaderField:@"Content-Type"];
+
     NSData *imgdata = imagedata;
-    
-    [manager POST:urlString parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    NSLog(@"-----iiiiiimg%@",url);
+
+    [manager POST:url parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         formatter.dateFormat   = @"YYYY-MM-dd-hh:mm:ss:SSS";
         NSString *str = [formatter stringFromDate:[NSDate date]];
         NSString *fileName = [NSString stringWithFormat:@"%@.png", str];
-    
         [formData appendPartWithFileData:imgdata name:@"mfile" fileName:fileName mimeType:@"image/jpeg"];
-    } progress:^(NSProgress * _Nonnull uploadProgress) {} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSString *errmsg = [responseObject objectForKey:@"errmsg"];
-        NSString *mediaID = [responseObject objectForKey:@"mediaid"];
         
-        if (mediaID && [errmsg isEqualToString:@"ok"]) {
-            block(responseObject);
-            NSLog(@"这里是图片上传的效果")
-        }
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+        
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSString *errmsg = [responseObject objectForKey:@"errmsg"];
+//        NSString *mediaID = [responseObject objectForKey:@"mediaid"];
+//
+//        if (mediaID && [errmsg isEqualToString:@"ok"]) {
+//            block(responseObject);
+//            NSLog(@"这里是图片上传的效果")
+//        }
+
+        NSLog(@"这里是上传成功过过过过过过过过%@",responseObject);
+        
+         block(nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败：%@",error);
         block(nil);

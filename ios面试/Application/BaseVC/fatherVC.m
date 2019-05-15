@@ -33,7 +33,7 @@
     
     _backimg=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, w,h)];
     _backimg .image =[UIImage imageNamed:@"back.jpg"];
-  //  [self .view addSubview:_backimg];
+    [self .view addSubview:_backimg];
     [_titvi addSubview:_backbut];
     [self .view addSubview:_titvi];
     [_backbut addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
