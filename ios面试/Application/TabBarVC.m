@@ -31,8 +31,6 @@
     
     
     NSString *selectedImageName = [NSString stringWithFormat:@"tab_%@_hlight",imageMainName];
-    
-    
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
@@ -40,18 +38,13 @@
     
     textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
     [nav.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
-    
-    
+ 
     NSMutableDictionary *selectTextAttrs = [NSMutableDictionary dictionary];
     selectTextAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
     selectTextAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
     [nav.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
   
     [self addChildViewController:nav];
-    
-    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    }
-    
 }
+
 @end

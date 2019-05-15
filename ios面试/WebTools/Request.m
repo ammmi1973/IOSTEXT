@@ -86,7 +86,6 @@ static Request *_sharedIn = nil;
 //            block(responseObject);
 //            NSLog(@"这里是图片上传的效果")
 //        }
-
         NSLog(@"这里是上传成功过过过过过过过过%@",responseObject);
         
          block(nil);

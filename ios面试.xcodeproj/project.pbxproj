@@ -263,19 +263,19 @@
 		A8D12BD3228C20AF00AA629D /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
+				A8D12BDC228C20AF00AA629D /* AnimationDiffNavi.h */,
 				A8D12BD4228C20AF00AA629D /* AnimationDiffNavi.m */,
+				A8D12BDB228C20AF00AA629D /* BaseAnimation.h */,
 				A8D12BD5228C20AF00AA629D /* BaseAnimation.m */,
+				A8D12BDA228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.h */,
 				A8D12BD6228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.m */,
 				A8D12BD7228C20AF00AA629D /* NavigationController.h */,
-				A8D12BD8228C20AF00AA629D /* fatherVC.h */,
-				A8D12BD9228C20AF00AA629D /* AnimationKuGou.m */,
-				A8D12BDA228C20AF00AA629D /* UIViewController+AnimationTransitioningSnapshot.h */,
-				A8D12BDB228C20AF00AA629D /* BaseAnimation.h */,
-				A8D12BDC228C20AF00AA629D /* AnimationDiffNavi.h */,
 				A8D12BDD228C20AF00AA629D /* NavigationController.m */,
 				A8D12BDE228C20AF00AA629D /* AnimationKuGou.h */,
+				A8D12BD9228C20AF00AA629D /* AnimationKuGou.m */,
 				A8D12BDF228C20AF00AA629D /* back.jpg */,
 				A8D12BE8228C675B00AA629D /* back.png */,
+				A8D12BD8228C20AF00AA629D /* fatherVC.h */,
 				A8D12BE0228C20AF00AA629D /* fatherVC.m */,
 			);
 			path = BaseVC;

@@ -1,7 +1,6 @@
 
 
 #import "UIViewController+AnimationTransitioningSnapshot.h"
-
 #import <objc/runtime.h>
 @implementation UIViewController (AnimationTransitioningSnapshot)
 
@@ -20,8 +19,6 @@
 {
     objc_setAssociatedObject(self, @"AnimationTransitioningSnapshot", snapshot, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-
-
 - (UIView *)topSnapshot
 {
     UIView *view = objc_getAssociatedObject(self, @"AnimationTransitioningTopSnapshot");

@@ -14,7 +14,6 @@
         [self.view addGestureRecognizer:popRecognizer];
         popRecognizer.delegate = self;
     }
-    
 }
 -(void)creatcommonview
 {
@@ -25,9 +24,8 @@
     _tit=[[UILabel alloc]initWithFrame:CGRectMake(50, heightStatus, w-100, 40)];
     _tit .textColor=[UIColor blackColor];
     _tit .textAlignment=1;
-//    _tit .font =[];
+//   _tit .font =[];
     [_titvi addSubview:_tit];
-
     _backbut=[[UIButton alloc]initWithFrame:CGRectMake(5, heightStatus, 40, 40)];
     [_backbut setImage:[UIImage imageNamed:@"back"] forState:0];
     
@@ -81,22 +79,8 @@
 }
 -(void)back
 {
- 
     [self .navigationController popViewControllerAnimated:YES];
 }
-//-(void)showtxt:(NSString *)txtstr
-//{
-//    [JRToast showWithText:txtstr topOffset:110] ;
-//}
-//-(void)startanimatin:(NSString *)text
-//{
-//    [loadview setOnView:self.view withTitle:text animated:YES];
-//}
-//-(void)stopanimation
-//{
-//    [loadview hideFromView:self.view animated:YES];
-//}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
