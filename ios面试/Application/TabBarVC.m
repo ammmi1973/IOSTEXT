@@ -8,6 +8,7 @@
 #import "TabBarVC.h"
 #import "ViewController.h"
 #import "SecondVC.h"
+#import "NavigationController.h"
 @interface TabBarVC ()
 @end
 @implementation TabBarVC
@@ -22,10 +23,11 @@
 }
 - (void)addChildVC:(UIViewController *)childVC title:(NSString *)title imageMainName:(NSString *)imageMainName
 {
-    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:childVC];
+
+     NavigationController*nav=[[NavigationController alloc]initWithRootViewController:childVC];
     [nav setNavigationBarHidden:YES];
     nav .tabBarItem .title =title;
-    
+
     NSString *imageName = [NSString stringWithFormat:@"tab_%@",imageMainName];
     childVC.tabBarItem.image = [UIImage imageNamed:imageName];
     
