@@ -19,7 +19,7 @@
 
     BOOL log=[modle getfirtlog];
     
-    if (log ==YES)
+    if (log ==NO)
     {
          self .window .rootViewController =[FirstVC new];
     }
