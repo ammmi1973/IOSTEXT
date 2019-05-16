@@ -66,13 +66,19 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
         
     }]];
-//    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
-//    {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+    {
 
-//        [self presentViewController:alert animated:YES completion:nil];
-//
-//    }
-    [self presentViewController:alert animated:YES completion:nil];
+        [self presentViewController:alert animated:YES completion:nil];
+
+    }
+    else
+    {
+        [sureview showsingleAlterinVC:self withTitle:@"模拟器没有相机、请使用真机运行" andsingle:^{
+            
+            
+        }];
+    }
     
 }
 
@@ -83,11 +89,12 @@
 }
 -(void)uploadImage:(UIImage *)image
 {
+  
     NSData *imageData=UIImageJPEGRepresentation(image, 0.7);
-    
     [[webRequest Manager]UpdataImgRequestImgaData:imageData andComplet:^(NSDictionary *seccesdic) {
-        NSLog(@"这里是上传成功");
-        [loadimg setImage:image];
+        [sureview showAlterinVC:self withTitle:@"上传成功、是否加载？" andsure:^{
+            [loadimg setImage:image];
+        }];
     }];
 }
 

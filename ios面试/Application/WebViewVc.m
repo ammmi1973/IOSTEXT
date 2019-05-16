@@ -13,7 +13,6 @@
 @property (nonatomic, strong) WKWebViewConfiguration *wkConfig;
 @property (nonatomic, strong) UIProgressView *progressView;
 @end
-
 @implementation WebViewVc
 
 - (WKWebViewConfiguration *)wkConfig {
@@ -24,7 +23,6 @@
     }
     return _wkConfig;
 }
-
 - (WKWebView *)wkWebView {
     if (!_wkWebView) {
         _wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, nav_height, w, view_height) configuration:self.wkConfig];
@@ -41,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self .tit .text =@"这里是网页";
-    self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 64, [[UIScreen mainScreen] bounds].size.width, 2)];
+    self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0,nav_height, [[UIScreen mainScreen] bounds].size.width, 2)];
     self.progressView.backgroundColor = [UIColor blueColor];
     self.progressView.transform = CGAffineTransformMakeScale(1.0f, 1.5f);
     [self.view addSubview:self.progressView];
