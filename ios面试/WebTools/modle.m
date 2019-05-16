@@ -17,7 +17,6 @@
 +(BOOL)getfirtlog
 {
     NSString *logstr=[[NSUserDefaults standardUserDefaults]objectForKey:@"firstlog"];
-    NSLog(@"00000%@",logstr);
     if (logstr ==NULL)
     {
         return YES;
