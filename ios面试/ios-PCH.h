@@ -25,6 +25,7 @@
 #import "TxtHight.h"
 #import "fatherVC.h"
 #import "sureview.h"
+#import "modle.h"
 #ifdef DEBUG
 
 #define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);

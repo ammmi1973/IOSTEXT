@@ -22,6 +22,8 @@
 		A8324196228BC3BA00D96FC7 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8324195228BC3BA00D96FC7 /* TitleCell.m */; };
 		A8324199228BC3D100D96FC7 /* LeftImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8324198228BC3D100D96FC7 /* LeftImgCell.m */; };
 		A832419E228BCAB000D96FC7 /* MainVcView.m in Sources */ = {isa = PBXBuildFile; fileRef = A832419D228BCAAF00D96FC7 /* MainVcView.m */; };
+		A8CCE7CD228D32550076FC0D /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE7CC228D32550076FC0D /* FirstVC.m */; };
+		A8CCE7D0228D34420076FC0D /* modle.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE7CF228D34420076FC0D /* modle.m */; };
 		A8D12B9C228BFD4800AA629D /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12B9A228BFD4800AA629D /* TabBarVC.m */; };
 		A8D12B9F228BFDA900AA629D /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12B9E228BFDA900AA629D /* SecondVC.m */; };
 		A8D12BA2228C196800AA629D /* webload.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D12BA1228C196800AA629D /* webload.m */; };
@@ -88,6 +90,10 @@
 		A8324198228BC3D100D96FC7 /* LeftImgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftImgCell.m; sourceTree = "<group>"; };
 		A832419C228BCAAF00D96FC7 /* MainVcView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVcView.h; sourceTree = "<group>"; };
 		A832419D228BCAAF00D96FC7 /* MainVcView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVcView.m; sourceTree = "<group>"; };
+		A8CCE7CB228D32550076FC0D /* FirstVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
+		A8CCE7CC228D32550076FC0D /* FirstVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		A8CCE7CE228D34420076FC0D /* modle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modle.h; sourceTree = "<group>"; };
+		A8CCE7CF228D34420076FC0D /* modle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modle.m; sourceTree = "<group>"; };
 		A8D12B9A228BFD4800AA629D /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
 		A8D12B9B228BFD4800AA629D /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
 		A8D12B9D228BFDA900AA629D /* SecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
@@ -227,6 +233,8 @@
 				A8094A10228AFD9B00ED64B6 /* Requestheader.h */,
 				A8D12BA0228C196800AA629D /* webload.h */,
 				A8D12BA1228C196800AA629D /* webload.m */,
+				A8CCE7CE228D34420076FC0D /* modle.h */,
+				A8CCE7CF228D34420076FC0D /* modle.m */,
 			);
 			path = "WebTool\U0010s";
 			sourceTree = "<group>";
@@ -260,6 +268,8 @@
 				A8D12B9E228BFDA900AA629D /* SecondVC.m */,
 				A8D12BA3228C199300AA629D /* WebViewVc.h */,
 				A8D12BA4228C199300AA629D /* WebViewVc.m */,
+				A8CCE7CB228D32550076FC0D /* FirstVC.h */,
+				A8CCE7CC228D32550076FC0D /* FirstVC.m */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -482,7 +492,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D12BA5228C199300AA629D /* WebViewVc.m in Sources */,
+				A8CCE7CD228D32550076FC0D /* FirstVC.m in Sources */,
 				A8D12BF1228D2EEE00AA629D /* sureview.m in Sources */,
+				A8CCE7D0228D34420076FC0D /* modle.m in Sources */,
 				A8094A11228AFD9B00ED64B6 /* webRequest.m in Sources */,
 				A8D12BE5228C20AF00AA629D /* NavigationController.m in Sources */,
 				A8D12BE4228C20AF00AA629D /* AnimationKuGou.m in Sources */,

@@ -8,13 +8,27 @@
 
 #import "AppDelegate.h"
 #import "TabBarVC.h"
+#import "FirstVC.h"
+
 
 @interface AppDelegate ()
 @end
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self .window .backgroundColor =[UIColor whiteColor];
-    self .window .rootViewController =[TabBarVC new];
+
+    BOOL log=[modle getfirtlog];
+    
+    if (log ==YES)
+    {
+         self .window .rootViewController =[FirstVC new];
+    }
+    else
+    {
+        self .window .rootViewController =[TabBarVC new];
+        [modle firstlog:@"fuc"];
+    }
+
     return YES;
 }
 
