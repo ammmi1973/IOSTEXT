@@ -17,13 +17,13 @@
 +(BOOL)getfirtlog
 {
     NSString *logstr=[[NSUserDefaults standardUserDefaults]objectForKey:@"firstlog"];
-    if (logstr ==NULL)
+    if (logstr)
     {
-        return YES;
+        return NO;
     }
     else
     {
-        return NO;
+        return YES;
     }
 }
 @end

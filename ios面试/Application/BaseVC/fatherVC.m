@@ -8,6 +8,7 @@
 {
     [super viewDidLoad];
     [self creatcommonview];
+    
     if (self.navigationController && self != self.navigationController.viewControllers.firstObject)
     {
         UIPanGestureRecognizer *popRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePopRecognizer:)];

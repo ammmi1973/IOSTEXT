@@ -19,14 +19,15 @@
 
     BOOL log=[modle getfirtlog];
     
-    if (log ==NO)
+    if (log ==YES)
     {
          self .window .rootViewController =[FirstVC new];
+         [modle firstlog:@"fuc"];
     }
     else
     {
         self .window .rootViewController =[TabBarVC new];
-        [modle firstlog:@"fuc"];
+        
     }
 
     return YES;
